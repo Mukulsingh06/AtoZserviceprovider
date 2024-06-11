@@ -1,0 +1,128 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    font-size: 18px;
+}
+
+body {
+    background: linear-gradient(135deg, #ec6fff, #fcff07, #21f3e9);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 40px 20px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 55%;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.wrapper h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.wrapper .description {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 1.5em;
+}
+
+.container {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.container label {
+    font-size: 1.2em;
+    color: #333;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.container label i {
+    margin-left: 0.5em;
+    color: #2196f3;
+}
+
+.container input {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid #d2d2d2;
+    outline: none;
+    margin-top: 8px;
+    padding: 0 10px;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.container input:focus {
+    border-color: #3164ff;
+    box-shadow: 0 0 8px rgba(49, 100, 255, 0.6);
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.buttons button {
+    background-color: #2196f3;
+    border: none;
+    padding: 0.9em 2.5em;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.buttons button:hover {
+    background-color: #1976d2;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.buttons button i {
+    font-size: 1.2em;
+}
