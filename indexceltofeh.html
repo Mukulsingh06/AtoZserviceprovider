@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styleceltofeh.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Temperature Converter</h1>
+        <p class="description">Easily convert temperatures between Celsius and Fahrenheit</p>
+        <div class="container">
+            <label for="celsius">Celsius <img src="Firefly generate a celcius icon like a graphics 48656 (1).jpg"
+                    width="50px" height="50px" alt="Celsius Icon"></label>
+            <input type="number" id="celsius" placeholder="Enter Celsius" oninput="celToFar()">
+        </div>
+        <div class="container">
+            <label for="fahrenheit">Fahrenheit <img
+                    src="Firefly Generate a Fahrenheit icon, with graphics ,light colors and similar to uploaded image 4277.jpg"
+                    width="50px" height="50px" alt="Fahrenheit Icon"></label>
+            <input type="number" id="fahrenheit" placeholder="Enter Fahrenheit" oninput="farToCel()">
+        </div>
+        <div class="buttons">
+            <button onclick="resetFields()">Reset <i class="fas fa-sync-alt"></i></button>
+        </div>
+    </div>
+    <script src="scriptceltofeh.js"></script>
+</body>
+
+</html>

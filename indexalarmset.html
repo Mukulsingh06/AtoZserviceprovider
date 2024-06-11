@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Material Design Alarm App</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto+Mono:wght@500&display=swap"
+        rel="stylesheet" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="stylealarmset.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1><i class="fas fa-bell"></i> Alarm App</h1>
+        <p class="description">Never miss a beat with our stylish alarm app!</p>
+        <div class="timer-display">00:00:00</div>
+        <div class="container">
+            <div class="inputs">
+                <input type="number" id="hourInput" placeholder="HH" min="0" max="23" />
+                <input type="number" id="minuteInput" placeholder="MM" min="0" max="59" />
+            </div>
+            <button id="set"><i class="fas fa-plus-circle"></i> Add Alarm</button>
+            <div class="activeAlarms"></div>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="scriptalarmset.js"></script>
+</body>
+
+</html>
