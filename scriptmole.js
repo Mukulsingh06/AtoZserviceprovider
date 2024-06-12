@@ -3,7 +3,7 @@ const holes = [...document.querySelectorAll('.hole')]
 const scoreEl = document.querySelector('.score span')
 let score = 0
 
-const sound = new Audio("assetsmole/smashmole.mp3")
+const sound = new Audio("smashmole.mp3")
 
 function run() {
     const i = Math.floor(Math.random() * holes.length)
@@ -12,13 +12,13 @@ function run() {
 
     const img = document.createElement('img')
     img.classList.add('mole')
-    img.src = 'assetsmole/molemole.png'
+    img.src = 'molemole.png'
 
     img.addEventListener('click', () => {
         score += 10
         sound.play()
         scoreEl.textContent = score
-        img.src = 'assetsmole/mole-whackedmole.png'
+        img.src = 'mole-whackedmole.png'
         clearTimeout(timer)
         setTimeout(() => {
             hole.removeChild(img)
