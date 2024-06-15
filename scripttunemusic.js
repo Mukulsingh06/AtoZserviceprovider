@@ -10,7 +10,7 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    {songName: "Warriyo - Mortals [NCS Release]", filePath: "/songsomaz/1.mp3", coverPath: "coversomaz/1.jpg"},
+    {songName: "Warriyo - Mortals [NCS Release]", filePath: "https://drive.google.com/file/d/1tjOPIf1OSlkpNTMr-UCURCqagiqUcvgH/view?usp=sharing", coverPath: "coversomaz/1.jpg"},
     {songName: "Cielo - Huma-Huma", filePath: "songsomaz/2.mp3", coverPath: "coversomaz/2.jpg"},
     {songName: "DEAF KEV - Invincible [NCS Release]-320k", filePath: "songsomaz/3.mp3", coverPath: "coversomaz/3.jpg"},
     {songName: "Different Heaven & EH!DE - My Heart [NCS Release]", filePath: "songsomaz/4.mp3", coverPath: "coversomaz/4.jpg"},
